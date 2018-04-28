@@ -1,0 +1,4 @@
+CSSLint - Raymond Camden 
+Beautify - Drew Hamlett
+Brackets Icons - Ivo Gabe de Wolff
+Indent Guides - Lance Campbell

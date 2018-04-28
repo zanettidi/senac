@@ -1,0 +1,121 @@
+/*
+css/estilo.css
+*/
+
+
+h1{ 
+    font-family: 'Lobster', cursive; 
+    font-size: 400%; 
+    color: #DC3D24;  
+    text-shadow: 0.5px 1.5px #ffffff;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Lobster Two', cursive; 
+	font-size: 30px; 
+	color: #DC3D24; 
+	margin-top: 5px; 
+	margin-bottom: 15px;
+}
+
+header, main, footer{
+    width: 960px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Oxygen', sans-serif; 
+	background-color: #232B2B; 
+	color: #ffffff; 
+	text-align: center;
+}
+
+a{color:#E3AE57}
+
+.foto-perfil{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 10px solid white;
+    filter: grayscale();
+    width: 250px;
+}
+
+.foto-perfil:hover{
+    filter: none;
+}
+
+a:hover{color:yellow}
+
+#redes-sociais li{
+    display: inline-block; 
+    margin: 0 5px;
+}
+
+#redes-sociais li a{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    text-indent: 9000px;
+    overflow: hidden;
+    filter: grayscale();
+}
+
+#redes-sociais li a:hover{
+    filter: none;   
+}
+    
+.github{
+    background-image: url("../imagens/github.png");
+}
+
+.facebook{
+    background-image: url("../imagens/facebook.png");
+}
+ 
+.devcard{
+    background-image: url("../imagens/devcard.png");
+}
+
+.linkedin{
+    background-image: url("../imagens/linkedin.png");
+}
+
+.projetos{text-align: left}
+
+.projetos li{
+    margin-bottom: 7px; 
+    margin-top: 7px;
+    padding-left: 24px; 
+    background-image: url('../imagens/projetos.png'); 
+    background-repeat: no-repeat
+}
+
+.projetos li:hover{color: #e35757}
+
+
+.competencias ul{width:700px; margin: 0 auto}
+.competencias li{ display: inline-block; width: 150px; padding: 8px; margin: 3px;}
+
+.dev{background-color: #16a085; border: 2px solid #16a085 }
+.dev:hover{background-color: #1abc9c}
+
+.engine{background-color: #27ae60; border: 2px solid #27ae60 }
+.engine:hover{background-color: #2ecc71 }
+
+.design{background-color: #2980b9; border: 2px solid #2980b9 }
+.design:hover{background-color: #3498db}
+
+.banco{background-color: #8e44ad; border: 2px solid #8e44ad }
+.banco:hover{background-color: #9b59b6 }
+
+.tresD{background-color: #2c3e50; border: 2px solid #2c3e50 }
+.tresD:hover{background-color: #34495e }
+
+footer{ 
+    margin-top: 50px; 
+    padding-top: 20px; 
+    padding-bottom: 50px; 
+    background-color: #DC3D24;  
+    text-shadow: 0.5px 1.5px #232B2B; 
+    bottom:0px;
+}
