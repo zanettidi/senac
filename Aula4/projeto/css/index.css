@@ -1,5 +1,12 @@
 .foto-home {
+    width: 200px;
     height: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+    -webkit-border-radius: 100px; /*Google Chrome, Safari*/
+    -moz-border-radius: 100px; /*Mozilla Firefox*/
+    -ms-border-radius: 100px; /*Internet Explorer*/
+    -o-border-radius: 100px; /*Opera*/
 }
 
 /**/
@@ -113,4 +120,95 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
+}
+
+.palavra-home {
+    position: absolute;
+    font-size: 15px;
+    text-shadow: 2px 2px 3px black;
+    opacity: 0.5;
+}
+
+.eficiencia {
+    top: 50%;
+    left: 20%;
+    transform: rotate(10deg) scale(1.2);
+}
+
+.css {
+    top: 30%;
+    left: 30%;
+    transform: rotate(-10deg) scale(1.5);
+}
+
+.html5 {
+    top: 30%;
+    left: 80%;
+    transform: rotate(-20deg) scale(1);
+}
+
+.boas-praticas {
+    top: 50%;
+    left: 75%;
+    transform: rotate(15deg) scale(1.1);
+}
+
+.java-script {
+    top: 40%;
+    left: 85%;
+    transform: rotate(30deg) scale(2);
+}
+
+.java {
+    top: 40%;
+    left: 70%;
+    transform: rotate(8deg) scale(1.7);
+}
+
+.boot-strap {
+    top: 17%;
+    left: 70%;
+    transform: rotate(-8deg);
+}
+
+.oracle {
+    top: 17%;
+    left: 15%;
+    transform: rotate(-32deg) scale(2);
+}
+
+.angular {
+    top: 10%;
+    left: 32%;
+    transform: rotate(32deg) scale(1.2);
+}
+
+.scrum {
+    top: 33%;
+    left: 19%;
+    transform: rotate(32deg);
+}
+
+.nodejs {
+    top: 17%;
+    left: 82%;
+    transform: rotate(25deg);
+}
+
+.banner-twitter {
+    width: 14em;
+    line-height: 1;
+    padding: 1em 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    border: .25em solid black;
+    font-size: .2em;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+    transform: translate(6.5754em, -2.4749em) rotate(45deg);
 }

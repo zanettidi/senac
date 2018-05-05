@@ -3,6 +3,7 @@ body {
     background-color: #F2FFFC;
     font-size: 120%;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 h1, h2,
@@ -178,4 +179,12 @@ main {
 
 .portfolio img {
     width: 100%;
+}
+
+.sombra {
+    box-shadow: 2px 2px 3px black;
+}
+
+.nomeportifolio {
+    text-shadow: 1px 1px 2px yellow;
 }

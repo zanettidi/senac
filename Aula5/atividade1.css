@@ -1,0 +1,49 @@
+p ~ span {
+  color: red;
+}
+
+span:first-of-type{
+    border: 4px solid black;
+    display: block;
+    height: 60px;
+    border-radius: 10px 20px 10px 20px;
+    width: calc(50% - 10px);
+    width: -webkit-calc(50% - 10px);
+    width: -moz-calc(50% - 10px);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+    -webkit-border-radius: 100px; /*Google Chrome, Safari*/
+    -moz-border-radius: 100px; /*Mozilla Firefox*/
+    -ms-border-radius: 100px; /*Internet Explorer*/
+    -o-border-radius: 100px; /*Opera*/
+}
+/*
+.foto{
+    transform: rotate(0deg);
+    transition: transform 2.5s;
+}
+
+.foto:hover{
+    transform: rotate(360deg);
+}
+*/
+
+.foto{
+    /*transform: scale(-1.5);*/
+    /*transform: skew(30deg);*/
+    /*transform: translate(50px,100px);*/
+    transform: rotate(20deg) scale(1.5) translate(100px , 100px);
+    
+}
+
+.eficiencia {
+    top: 20%;
+    left: 75%;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+}
