@@ -1,0 +1,7 @@
+/*
+    Dada essa estrutura, altere a cor do texto do autor e da data das notícias para verde.
+*/
+
+h1 + p{
+    color: green;
+}

@@ -1,0 +1,44 @@
+
+input[value="outro"] ~ input {
+    display: none;
+}
+
+input[value="outro"]:checked ~ input {
+    display: inline;
+}
+
+.zoo{
+    border: 1px solid;
+}
+
+.zoo li ~ li{
+    background-color: yellow;
+    border: 1px solid;
+}
+
+p {
+    text-indent: 4ch;
+}
+
+img + p{
+    text-indent: 0;
+}
+
+
+a[title="UOL"]{
+    background-color: pink;
+}
+
+a[href*="terra"]{
+    background-color: orange;
+}
+
+a[href$=".com"]{
+    background-color: red;
+}
+
+
+
+
+
+

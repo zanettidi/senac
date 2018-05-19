@@ -1,0 +1,7 @@
+/*
+    Altere a cor de fundo de todos os parágrafos para rosa,  menos o primeiro.
+*/
+
+p ~ p{
+    background-color: pink;
+}

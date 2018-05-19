@@ -1,0 +1,63 @@
+tr:nth-child(even){
+    background-color: pink;
+}
+
+tr:hover{
+    background-color: yellow;
+}
+
+img:hover{
+    border: 3px solid gray;
+    box-shadow: 1px 1px 20px red;
+}
+
+img:focus{
+    border: 3px solid yellow;
+}
+
+blockquote:focus{
+    border: 3px solid yellow;
+}
+
+table:focus{
+    border: 3px solid yellow;
+}
+
+
+p::first-letter{
+    font-size: 3em;
+}
+
+p::first-line{
+    color: red;
+}
+
+
+blockquote{
+    border: 5px solid;
+    padding: 20px;
+    width: 300px;
+}
+
+blockquote:before {
+    content: '<!--';
+    font-size: 3em;
+    color: red;
+    opacity: 0.2;
+}
+
+blockquote:after {
+    content: '-->';
+    font-size: 3em;
+    color: red;
+    opacity: 0.2;
+}
+
+
+
+
+
+
+
+
+

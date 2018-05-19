@@ -1,0 +1,67 @@
+#destaque{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 2s linear;
+    transition-timing-function: steps(4, end);
+}
+
+#destaque:hover{
+    transform: rotate(50deg);
+    background-color: aqua;
+}
+
+#titulo{
+    color: orange;
+    transition: color 12s, transform 5s;
+}
+
+#titulo:hover{
+    color: aqua;
+    transform: translateX(100px);
+}
+
+
+.menu{
+    background-color: hotpink;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.menu li{
+    transition: 0.5s;
+}
+
+.menu li:hover{
+    transform: translateX(10px);
+}
+
+.fade{
+    opacity: 0.5;
+    transition: 0.8s;
+}
+
+.fade:hover{
+    opacity: 1;
+}
+
+.muda-cor {
+    margin: 121px 149px;
+    width: 483px;
+    height: 298px;
+    background: #676470;
+    color: #fff;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 150px;
+    transition: 0.3s ease;
+}
+
+.muda-cor:hover{
+    background: #053a76;
+}

@@ -1,0 +1,7 @@
+/*
+    Altere a cor do texto de todos os parágrafos para laranja,  menos o primeiro.
+*/
+
+p ~ p{
+    color: orange;
+}
