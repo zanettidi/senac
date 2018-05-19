@@ -65,3 +65,147 @@
 .muda-cor:hover{
     background: #053a76;
 }
+
+.aumentar{
+    transition: 0.5s;
+}
+
+.aumentar:hover{
+    transform: scale(1.3);
+}
+
+.diminuir{
+    transition: 0.5s;
+}
+
+.diminuir:hover{
+    transform: scale(0.8);
+}
+
+.galeria{
+    list-style: none;
+    text-align: center;
+}
+
+.galeria li{
+    display: inline-block;
+    width: 250px;
+}
+
+.galeria li img{
+    width: 250px;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.galeria li img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.circulo{
+    width: 300px;
+    height: 300px;
+    transition: 0.3s;
+}
+
+.circulo:hover{
+    border-radius: 50%;
+}
+
+.botao{
+    background-color: crimson;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botao:hover{
+    background-color: #af1230;
+}
+
+.botao3d{
+    background-color: aquamarine;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao3d:hover{
+    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    transform: translateX(-3px);
+}
+
+.botao-inteiro{
+    background-color: #676470;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao-inteiro:hover{
+    box-shadow: inset 0 0 0 5px #53a7ea;
+}
+
+.botao-click{
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 9px #999;
+}
+
+.botao-click:hover{
+    background-color: #3e8e41;
+}
+
+.botao-click:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform:  translateY(4px);
+}
+.botao-texto{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    width: 100px;
+    transition: 0.5s;
+    cursor: none;
+    margin: 5px;
+}
+
+.botao-texto span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.botao-texto span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+
+.botao-texto:hover span{
+    padding-right: 10px;
+}
+
+.botao-texto:hover span:after{
+    opacity: 1;
+    right: 0;
+}
