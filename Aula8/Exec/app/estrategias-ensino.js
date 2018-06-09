@@ -1,0 +1,36 @@
+function EstrategiasController($scope) {
+    $scope.itens = [
+      {id:'Introducao', titulo: 'INTRODUÇÃO', desc1: '<p>O presente documento foi criado, em 2009, a partir da compilação de diversas estratégias de ensino-aprendizagem utilizadas na rede de Unidades Escolares do Senac São Paulo. Esse registro inicial foi realizado por docentes da rede e consultores pedagógicos do então Núcleo de Desenvolvimento Educacional (NDE). Em 2011, passou por uma atualização feita por profissionais da frente Desenho Educacional do Grupo Educação (GEDUC) e adotou o nome pelo qual é conhecido atualmente.</p><p>dispositivos utilizados pelo docente no decorrer de um curso, com o propósito de explorar condições favoráveis ao desenvolvimento de competências profissionais. Elas devem ser utilizadas no sentido de colocar os alunos como participantes ativos do seu processo de aprendizagem”. Assim, estão a serviço da construção de conhecimento, contribuindo tanto para o desenvolvimento de competências profissionais como para a constituição de uma metodologia de ensino-aprendizagem alinhada com os desafios próprios da  educação profissional, tal como descrito na Proposta Pedagógica do Senac São Paulo.</p> <p>Em concordância com essas premissas, e após o término de mais um processo de atualização, disponibilizamos hoje uma nova versão do Banco de Estratégias de Ensino-Aprendizagem, com a finalidade de oferecer aos docentes de Cursos Técnicos e de Formação Inicial e Continuada da Instituição subsídios para o planejamento de situações de ensino-aprendizagem de acordo com as diretrizes do Modelo Pedagógico Senac e da Proposta Pedagógica do Senac São Paulo.</p> <p>Em todos os casos, a apresentação foi elaborada contemplando uma definição da estratégia em questão, seguida de uma breve explicação sobre sua funcionalidade, uma descrição do papel de alunos e docentes na sua realização e alguns exemplos de sua utilização em cursos de diferentes áreas. Além disso, foram incluídas orientações sobre acessibilidade e sobre a utilização de diferentes recursos tecnológicos no contexto de cada estratégia.</p> <p>Esperamos que o trabalho desenvolvido contribua com o aprimoramento constante das práticas pedagógicas desenvolvidas no Senac São Paulo, e que o Banco de estratégias de Ensino-Aprendizagem continue sendo um documento vivo, fruto da construção coletiva e aberto a atualizações periódicas realizadas em função das contínuas mudanças ocorridas tanto no âmbito educacional quanto nas diferentes áreas de conhecimento que compõem portfólio de cursos do Senac São Paulo.</p> <p>Equipe GEDUC – Desenho Educacional.</p><p>São Paulo, fevereiro de 2015. </p>', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Video', titulo: 'Apresentação e discussão de vídeo', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Plenaria', titulo: 'Atividade em grupos com apresentação em plenária', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Internalizacao', titulo: 'Atividade individual de internalização', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Brainstorming', titulo: 'Brainstorming', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Mapa', titulo: 'Construção de mapa conceitual', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Contrato', titulo: 'Contrato de aprendizagem ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Debate', titulo: 'Debate ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Diario', titulo: 'Diário de bordo ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Dinamica', titulo: 'Dinâmica de grupo ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Discussao', titulo: 'Discussão de caso ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Dramatizacao', titulo: 'Dramatização ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Moodboard', titulo: 'Elaboração de mood board (quadro de inspiração) ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Mural', titulo: 'Elaboração de mural ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Painel', titulo: 'Elaboração de painel de informações ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Portfolio', titulo: 'Elaboração de portfólio ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Entrevista', titulo: 'Entrevista ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Experimentacao', titulo: 'Experimentação ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Exposicao', titulo: 'Exposição dialogada ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Jogo', titulo: 'Jogo ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Leitura', titulo: 'Leitura de textos ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Palestra', titulo: 'Palestra ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Pesquisa', titulo: 'Pesquisa ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Storytelling', titulo: 'Storytelling ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Simulacao', titulo: 'Simulação ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Projetos', titulo: 'Trabalho com projetos ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Visita', titulo: 'Visita técnica ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Webgincana', titulo: 'Webgincana ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Webquest', titulo: 'Webquest', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'World', titulo: 'World Café', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+
+    ];
+
+}

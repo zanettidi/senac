@@ -1,0 +1,28 @@
+.sanfona{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.sanfona-titulo{
+    display: block;
+    border: 1px solid #ccc;
+    background: #e5e5e5;
+    cursor: pointer;
+    padding: 5px 3px;
+    margin: 0;
+}
+
+.sanfona-conteudo{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+[name^=sanfona]:checked ~ .sanfona-conteudo{
+    height: auto;
+}
+
+.sanfona-item input{
+    display: none;
+}

@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="pt-br" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>Estrategias de ensino</title>
+    <script src="lib/angular-1.0.1.js"></script>
+	<script src="app/estrategias-ensino.js"></script>
+    <link href="css/ensino.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main ng-controller="EstrategiasController">
+
+		<h1>Banco de estratégias de Ensino-Aprendizagem</h1>
+        
+        <div class="sanfona">
+            <div class="sanfona-item" ng-repeat="item in itens">
+                
+                <input type="radio" name="sanfona" id="sanfona{{ item.id }}">
+                
+                <label class="sanfona-titulo" for="sanfona{{ item.id }}">
+                    <img src="imagens/icones/{{ item.id }}.PNG" alt="{{ item.titulo }}" class="icone"> {{ item.titulo }}
+                </label>
+                
+                <div class="sanfona-conteudo">
+                    {{ item.desc1 }}
+                    <br>
+                    <img src="imagens/{{ item.id }}.PNG" alt="{{ item.titulo }}" class="icone">
+                </div>   
+            </div>
+        </div>
+    </main>
+
+    <script src="lib/jquery-3.3.1.slim.min.js"></script>
+  </body>
+</html>
