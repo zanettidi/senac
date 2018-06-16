@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Tarefas</title>
+        <link href="estilo.css" rel="stylesheet">
+        <script>
+            function adicionando(){
+                var novaTarefa = document.getElementById("nova-tarefa").value;
+                var listaTarefas = document.getElementById("lista-tarefas");
+                
+                listaTarefas.innerHTML += "<li>" + novaTarefa + "</li>";
+                document.getElementById("nova-tarefa").value = "";
+            }
+            
+            function salvando(){
+                var listaDeTarefas = document.getElementById("lista-tarefas");
+                sessionStorage.setItem("TodasAsTarefas", listaDeTarefas.innerHTML);
+                
+                alert("Lista de Tarefas Salva!");
+            }
+            
+            function carregando(){
+                if(sessionStorage.getItem("TodasAsTarefas")){
+                   var listaDeTarefas = document.getElementById("lista-tarefas");
+                    listaDeTarefas.innerHTML = sessionStorage.getItem("TodasAsTarefas");
+                   } else {
+                       document.getElementById("lista-tarefas").innerHTML = "";
+                   }
+            }
+            
+            function excluindo(){
+                sessionStorage.removeItem("TodasAsTarefas");
+                carregando();
+                
+                alert("Tarefas apagadas!");
+            }
+        </script>
+    </head>
+    <body onload="carregando();">
+        <h1>Controle de Tarefas</h1>
+        <hr>
+        <form>
+            <input type="text" id="nova-tarefa" placeholder="Nova Tarefa">
+            <button type="button" onclick="adicionando();"><img src="imagens/add.png" width="32" height="32"></button>
+        </form>
+        
+        <button type="button" onclick="salvando();"><img src="imagens/salvar.png" width="32" height="32"></button>
+        <button type="button" onclick="excluindo();"><img src="imagens/cancel.png" width="32" height="32"></button>
+        <button type="button" onclick="carregando();"><img src="imagens/recarregar.png" width="32" height="32"></button>        
+        
+        <ul id="lista-tarefas"></ul>
+    </body>
+</html>
