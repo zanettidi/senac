@@ -7,10 +7,14 @@
         <script>
             function adicionando(){
                 var novaTarefa = document.getElementById("nova-tarefa").value;
+                var dataTarefa = document.getElementById("data-tarefa").value;
+                
                 var listaTarefas = document.getElementById("lista-tarefas");
                 
-                listaTarefas.innerHTML += "<li>" + novaTarefa + "</li>";
+                listaTarefas.innerHTML += "<li>" + dataTarefa + " - " + novaTarefa + "</li>";
+                
                 document.getElementById("nova-tarefa").value = "";
+                document.getElementById("data-tarefa").value = "";
             }
             
             function salvando(){
@@ -41,7 +45,9 @@
         <h1>Controle de Tarefas</h1>
         <hr>
         <form>
+            <input type="date" id="data-tarefa" placeholder="dd/mm/aaaa">
             <input type="text" id="nova-tarefa" placeholder="Nova Tarefa">
+            
             <button type="button" onclick="adicionando();"><img src="imagens/add.png" width="32" height="32"></button>
             <button type="button" onclick="salvando();"><img src="imagens/salvar.png" width="32" height="32"></button>
         <button type="button" onclick="excluindo();"><img src="imagens/cancel.png" width="32" height="32"></button>

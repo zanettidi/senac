@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Desenhando</title>
+    </head>
+    <body>
+        <canvas id="quadrado"></canvas>
+        
+        <script>
+            var desenho1 = document.getElementById("quadrado");
+            var d1 = desenho1.getContext("2d");
+            
+            d1.fillStyle = "blue";
+            d1.fillRect(50,50,50,50);
+            
+            d1.fillStyle = "red"
+            d1.fillRect(100,100,50,50);
+            
+            d1.fillStyle = "green"
+            d1.fillRect(100,50,50,50);
+            
+            d1.fillStyle = "yellow"
+            d1.fillRect(50,100,50,50);
+        </script>
+    </body>
+</html>
