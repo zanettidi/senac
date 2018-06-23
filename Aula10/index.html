@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>FlexBox</title>
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="mapa">
+        
+        </div>
+        <div class="container">
+            <img src="imagens/foto1.png" width="300" height="300">
+            <img src="imagens/foto1.png" width="300" height="300">
+            <img src="imagens/foto2.png" width="300" height="300" class="menor">
+        </div>
+        <h2>Destaques</h2>
+        <ul class="destaques">
+            <li><img src="imagens/foto3.png" width="300" height="300"></li>
+            <li><img src="imagens/foto4.png" width="300" height="300"></li>
+            <li><img src="imagens/foto5.png" width="300" height="300"></li>
+        </ul>
+        
+        <h2>Ultimas Noticias</h2>
+        <ul class="ultimas-noticias">
+            <li><img src="imagens/foto1.png" width="300" height="300"><a href="#">Click aqui para ler a noticia completa</a></li>
+            <li><img src="imagens/foto2.png" width="300" height="300"><a href="#">Click aqui para ler a noticia completa</a></li>
+            <li><img src="imagens/foto3.png" width="300" height="300"><a href="#">Click aqui para ler a noticia completa</a></li>
+            <li><img src="imagens/foto4.png" width="300" height="300"><a href="#">Click aqui para ler a noticia completa</a></li>
+            <li><img src="imagens/foto5.png"  width="300" height="300"><a href="#">Click aqui para ler a noticia completa</a></li>
+        </ul>
+        
+        <script>
+            function localizacao() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(posicao);
+                } else {
+                    console.log("Geolocalização não é suportada pelo navegador");
+                }
+            }
+            
+            function posicao(position) {
+                console.log("Latitude: " + position.coords.latitude);
+                console.log("Longetude: " + position.coords.longitude);
+                
+                var latitude = position.coords.latitude;
+                var longitude= position.coords.longitude;
+                
+                /*#var link_mapa = "<a target='_blank' href='http://www.google.com/maps/?q=" + latitude + "," + longitude + "'>Mapa</a>"
+                
+                #document.querySelector("body").innerHTML += link_mapa;
+                */
+                var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=14&size=500x300&sensor=false";
+                
+                document.querySelector("#mapa").innerHTML = "<img src='" + img_url + "'>"
+            }
+            
+            localizacao();
+        </script>
+    </body>
+</html>

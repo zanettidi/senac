@@ -1,0 +1,45 @@
+#mapa {
+    width: 100%;
+    height: 300px;
+    border: 1px solid;
+}
+
+.menor {
+    width: 250px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ultimas-noticias {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destaques {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.destaques img {
+    border: 5px solid white;
+}
+
+.destaques li {
+    border: 1px solid;
+}
+
+.destaques li:first-child {
+    order: 1;
+    transform: scale(1.2);
+}
+
+.destaques li:nth-child(2){
+    order: 2;
+}

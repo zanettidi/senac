@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Desenhos</title>
+    </head>
+    <body>
+        
+        <canvas id="tela1" width="600" height="400"></canvas>
+        
+        <canvas id="tela2" width="600" height="400"></canvas>
+        
+        <script>
+            var tela1= document.querySelector("#tela1");
+            var pincel= tela1.getContext("2d");
+            
+            //cabeça
+            pincel.fillStyle = "darkgreen";
+            pincel.fillRect(200,50,350,300);
+            
+            //Olho esquerdo
+            pincel.fillStyle = "black";
+            pincel.fillRect(250,110,90,90);
+            
+            //Olho direito
+            pincel.fillStyle = "black";
+            pincel.fillRect(410,110,90,90);
+            
+            // Boca
+            pincel.fillStyle = "black";
+            pincel.fillRect(340,200,70,90);
+            
+            pincel.fillRect(300,260,40,90);
+            pincel.fillRect(410,260,40,90);
+            
+            var tela2= document.querySelector("#tela2");
+            var pincel2= tela2.getContext("2d");
+            
+            pincel2.fillStyle = "lightgrey";
+            pincel2.fillRect(0,0,600,400);
+            
+            //Olho esquerdo
+            pincel2.fillStyle = "green";
+            pincel2.fillRect(0,0,200,400);
+            
+            //Olho direito
+            pincel2.fillStyle = "red";
+            pincel2.fillRect(400,0,200,400);
+            
+            pincel2.font = "50pt Arial";
+            pincel2.fillStyle = "black";
+            pincel2.fillText("ITALIA", 195, 230);
+            
+        </script>
+    </body>
+</html>
