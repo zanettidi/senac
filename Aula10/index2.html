@@ -10,6 +10,8 @@
         
         <canvas id="tela2" width="600" height="400"></canvas>
         
+        <canvas id="tela3" width="600" height="400"></canvas>
+        
         <script>
             var tela1= document.querySelector("#tela1");
             var pincel= tela1.getContext("2d");
@@ -50,6 +52,24 @@
             pincel2.font = "50pt Arial";
             pincel2.fillStyle = "black";
             pincel2.fillText("ITALIA", 195, 230);
+            
+            var tela3= document.querySelector("#tela3");
+            var pincel3= tela3.getContext("2d");
+            
+            pincel3.lineWidth=5;
+            pincel3.strokeStyle = "black";
+            pincel3.strokeRect(0,0,600,400);
+            
+            pincel3.fillStyle = "red";
+            pincel3.beginPath();
+            
+            pincel3.arc(300,200,100,0,2*3.14);
+            pincel3.fill();
+            
+            pincel3.lineWidth=1;
+            pincel3.font = "50pt Arial";
+            pincel3.strokeStyle="black";
+            pincel3.strokeText("JAPAO", 195,230);
             
         </script>
     </body>
